@@ -1,87 +1,57 @@
-<!DOCTYPE html> 
-<html> 
-  
-<head> 
-    <title>Registration Form</title> 
-    <link rel="stylesheet" 
-          href="style.css"> 
-</head> 
-<body style="background-color:lightblue;">
-    <div class="main"> 
-        <h1><u>Registration form:</u></h1> 
-        <form action=""> 
-            <label for="first">First Name:</label> 
-            <input type="text" id="first" 
-                   name="first" 
-                   placeholder="Enter your first name" required> 
-                   <br>
-                   <br>
-  
-            <label for="last">Last Name:</label> 
-            <input type="text" id="last" 
-                   name="last" 
-                   placeholder="Enter your last name" required> 
-                   <br>
-                   <br>
-  
-            <label for="email">Email:</label> 
-            <input type="email" id="email" 
-                   name="email" 
-                   placeholder="Enter your email" required> 
-                   <br>
-                   <br>
-  
-            <label for="dob">Date of Birth:</label> 
-            <input type="date" 
-                   id="dob" name="dob" 
-                   placeholder="Enter your DOB" required> 
-                   <br>
-                   <br>
-  
-            <label for="password">Password:</label> 
-            <input type="password" id="password" 
-                   name="password"
-                   placeholder="Enter your password"
-                   pattern= 
-                   "^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" required                    
-                   title="Password must contain at least one number,  
-                       one alphabet, one symbol, and be at  
-                       least 8 characters long"> 
-                       <br>
-                       <br>
-  
-            <label for="repassword">Re-type Password:</label> 
-            <input type="password" id="repassword" 
-                   name="repassword" 
-                   placeholder="Re-Enter your password" required> 
-            <span id="pass"></span> <br>
-            <br>
-  
-            <label for="mobile">Contact:</label>
-            <input type="text" id="mobile" 
-                   name="mobile" 
-                   placeholder="Enter your Mobile Number" required 
-                   maxlength="10"> 
-                   <br>
-                   <br>
-  
-            <label for="gender">Gender:</label> 
-            <select id="gender" name="gender" required> 
-                <option value="male">Male</option> 
-                <option value="female">Female</option> 
-                <option value="other">Other</option> 
-            </select> 
-            <br>
-            <br>
-  
-            <div class="wrap"> 
-                <button type="submit" onclick="solve()"> 
-                  Submit 
-                  </button> 
-            </div> 
-        </form> 
-    </div> 
-    <script src="script.js"></script> 
-</body> 
-  
-</html>
+<head>
+  <style>
+@media (max-width:768px){
+  .container{
+  padding-top: 50%;
+  }
+}
+  </style>
+</head>
+<div class="container">
+  <center>
+  <h1><center>Registration-form</center></h1>
+  <form name="registration" class="registartion-form" onsubmit="return formValidation()">
+    <table>
+      <tr>
+        <td><label for="name">Full Name:</label></td>
+        <td><input type="text" name="name" id="name" placeholder="your name"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="text" name="email" id="email" placeholder="your email"></td>
+      </tr>
+      <tr>
+      <td><label for="dob">Date of Birth:</label> </td>
+      <td><input type="date" 
+             id="dob" name="dob" 
+             placeholder="Enter your DOB" required> 
+             </td>
+      </tr>
+             <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" name="password" id="password"></td>
+      </tr>
+    </tr>
+    <tr>
+      <td><label for="password"> Re-Enter Password:</label></td>
+      <td><input type="password" name="password" id="password"></td>
+    </tr>
+      <tr>
+        <td><label for="phone number">Contact:</label></td>
+        <td><input type="number" name="phone number" id="number"></td>
+      </tr>
+      <tr>
+        <td><label for="gender">Gender:</label></td>
+        <td>Male: <input type="radio" name="gender" value="male">
+          Female: <input type="radio" name="gender" value="female">
+          Other: <input type="radio" name="gender" value="other"></td>
+      </tr>
+      <
+     
+      <tr>
+        <td colspan="2"><center><input type="submit" class="submit" value="Register" /></center></td>
+      </tr>
+    </table>
+  </form>
+  </center>
+</div>

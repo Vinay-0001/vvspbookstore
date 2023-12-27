@@ -3,8 +3,8 @@
 :root{
     --blue: #3a71c9;
     --dark-color:#083663;
-    --black:#444;
-    --light-color:#666;
+    --black:#000000;
+    --light-color:#080808;
     --border:.1rem solid rgba(0,0,0,.1);
     --border-hover:.1rem solid var(--black);
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
@@ -330,6 +330,7 @@ section{
 }
 
 .deal .image{
+    padding-left: 30%;
     flex:1 1 42rem;
 }
 
@@ -391,6 +392,9 @@ section{
 .reviews .reviews-slider .box .stars i{
     font-size: 1.7rem;
     color:var(--blue);
+}
+.footer{
+    background-color: rgb(108, 195, 225);
 }
 .footer .box-container{
     display: grid;
@@ -503,6 +507,9 @@ section{
 
     .home .row .content h3{
         font-size: 3.5rem;
+    }
+    .deal .image{
+        padding-left: 5px;
     }
 }
 
