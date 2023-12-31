@@ -250,11 +250,9 @@ section{
 }
 
 .featured .featured-slider .box{
-    margin:2rem 0;
+    margin:2rem 0rem;
     position: relative;
-    overflow: hidden;
     border:var(--border);
-    text-align: center;
 }
 
 .featured .featured-slider .box:hover{
@@ -263,7 +261,7 @@ section{
 
 .featured .featured-slider .box .image{
     padding:1rem;
-    background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
+    background: linear-gradient(to top,#1584a0 20%, #30b6eb 70.1%);
 }
 
 
@@ -272,14 +270,7 @@ section{
     height: 250px;
 }
 
-.featured .featured-slider .box .icons{
-    border-bottom: var(--border-hover);
-    position: absolute;
-    top:0; left:0; right: 0;
-    background: #fff;
-    z-index: 1;
-    transform: translateY(-105%);
-}
+
 
 .featured .featured-slider .box:hover .icons{
     transform: translateY(0%);
@@ -297,7 +288,7 @@ section{
 }
 
 .featured .featured-slider .box .content{
-    background:#eee;
+    background: #90b1da;
     padding:1.5rem;
 }
 
@@ -519,4 +510,12 @@ section{
         font-size: 50%;
     }
 
+}
+
+.scrollable-container {
+    height: 400px; /* Set the desired height */
+    overflow-y: scroll;
+}
+.swiper-slide {
+    margin-bottom: 20px; /* Add space between slides */
 }
