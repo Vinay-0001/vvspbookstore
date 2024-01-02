@@ -18,7 +18,7 @@ header nav{
   background-color: #195abc;
   color: #fff;  
   padding: 16px;
-  text-align:center;
+  text-align:left;
   position: fixed;
   width: 100%;
 }
@@ -78,8 +78,6 @@ h2 {
 body {
       display: flex;
     }
-
-    /* Sidebar styles */
     aside {
       margin-top: 60px;
       margin-right: 1px;
@@ -108,7 +106,7 @@ body {
       cursor: pointer;
       color: #fff;
       margin-right: 10px;
-      display: none; /* Initially hide on larger screens */
+      display: none;
     }
 
     @media screen and (max-width: 768px) {
@@ -143,6 +141,9 @@ button:hover{
   height: 40px;
   width: 130px;
 }
+.neww{
+  padding-top: 20px;
+}
 
   </style>
 </head>
@@ -151,13 +152,12 @@ button:hover{
   <aside>
     <span class="menu-btn" onclick="toggleSidebar">&#10006;</span>
     <button class="btncart"><a href="./index.html">Home</a></button>
-    <a href="#fiction" onclick="scrollToSection('Fiction')">Fiction</a>
-    <a href="#non-fiction" onclick="scrollToSection('Non-Fiction')">Non-Fiction</a>
-    <a href="#mystery" onclick="scrollToSection('Mystery')">Mystery</a>
-    <a href="#science-fiction" onclick="scrollToSection('Science')">Science Fiction</a>
-    <a href="#thriller" onclick="scrollToSection('Thriller')">Thriller/Horrer</a>
-    <a href="#biography" onclick="scrollToSection('Biography')">Biography</a>
-    <!-- Add more categories as needed -->
+    <a href="#fiction" class="neww" onclick="scrollToSection('Fiction')">Fiction</a>
+    <a href="#non-fiction" class="neww" onclick="scrollToSection('Non-Fiction')">Non-Fiction</a>
+    <a href="#mystery" class="neww" onclick="scrollToSection('Mystery')">Mystery</a>
+    <a href="#science-fiction" class="neww" onclick="scrollToSection('Science')">Science Fiction</a>
+    <a href="#thriller" class="neww" onclick="scrollToSection('Thriller')">Thriller/Horrer</a>
+    <a href="#biography" class="neww" onclick="scrollToSection('Biography')">Biography</a>
   </aside>
   <main>
   <div class="container">
@@ -167,8 +167,10 @@ button:hover{
         <div class="book">
           <img src="https://mpd-biblio-covers.imgix.net/9781250267689.jpg?w=450" alt="Book 1">
           <h3>A Master Of Djinn</h3>
+<span>&#9733;</span>
+<span class="rating-number">4.4</span>
 <p style="color:green">
-<code>15% OFF</code>
+<code>35% OFF</code>
 <h2><p><u>₹220.99</u></p></h2>
 <del>₹320.99</p>
   <center><button class="btncart">Add to cart</button></center>
@@ -176,29 +178,24 @@ button:hover{
         <div class="book">
           <img src="https://www.hachettebookgroup.com/wp-content/uploads/2020/08/9780316341868-2.jpg" alt="Book 2">
           <h3>A Little Hatred</h3>
+<span>&#9733;</span>
+<span class="rating-number">4.5</span>
 <p style="color:green">
-<code>10% OFF</code>
-<h2><p><u>₹127.99</u></p></h2>
+<code>37% OFF</code>
+<h2><p><u>₹126.99</u></p></h2>
 <del>₹200.99</p>
   <center><button class="btncart">Add to cart</button></center>
         </div>
         <div class="book">
           <img src="https://www.hachettebookgroup.com/wp-content/uploads/2021/04/9780316440899-1.jpg" alt="Book 3">
           <h3>Jade City</h3>
+<span>&#9733;</span>
+<span class="rating-number">4.3</span>
 <p style="color:green">
-<code>11% OFF</code>
-<h2><p><u>₹118.99</u></p></h2>
+<code>40% OFF</code>
+<h2><p><u>₹119.99</u></p></h2>
 <del>₹199.99</p>
 <center><button class="btncart">Add to cart</button></center>
-        </div>
-        <div class="book">
-          <img src="https://mpd-biblio-covers.imgix.net/9781250267689.jpg?w=450" alt="Book 1">
-          <h3>A Master Of Djinn</h3>
-<p style="color:green">
-<code>15% OFF</code>
-<h2><p><u>₹220.99</u></p></h2>
-<del>₹320.99</p>
-  <center><button class="btncart">Add to cart</button></center>
         </div>
       </div>
     </div>
@@ -208,36 +205,33 @@ button:hover{
         <div class="book">
           <img src="https://b2600043.smushcdn.com/2600043/wp-content/uploads/2019/07/dr_einstein_universe.jpg?lossy=0&strip=1&webp=1" alt="Book 1">
           <h3>The Universe And DR.Einstein</h3>
+<span>&#9733;</span>
+<span class="rating-number">4.1</span>
 <p style="color:green">
-<code>12% OFF</code>
-<h2><p><u>₹125.99</u></p></h2>
+<code>30% OFF</code>
+<h2><p><u>₹139.99</u></p></h2>
 <del>₹199.99</p>
   <center><button class="btncart">Add to cart</button></center>
         </div>
         <div class="book">
           <img src="https://pictures.abebooks.com/isbn/9780553256154-us.jpg" alt="Book 2">
-          <h3>Maya Angelou</h3>
+          <h3>I Know Why The Caged Bird Sings</h3>
+<span>&#9733;</span>
+<span class="rating-number">4.0</span>
 <p style="color:green">
-<code>24% OFF</code>
-<h2><p><u>₹129.99</u></p></h2>
+<code>45% OFF</code>
+<h2><p><u>₹136.99</u></p></h2>
 <del>₹249.99</p>
   <center><button class="btncart">Add to cart</button></center>
         </div>
         <div class="book">
           <img src="https://pictures.abebooks.com/isbn/9780553176988-us.jpg" alt="Book 3">
           <h3>A Brief History Of Time</h3>
+<span>&#9733;</span>
+<span class="rating-number">4.6</span>
 <p style="color:green">
-<code>11% OFF</code>
-<h2><p><u>₹222.99</u></p></h2>
-<del>₹320.99</p>
-  <center><button class="btncart">Add to cart</button></center>
-        </div>
-        <div class="book">
-          <img src="https://mpd-biblio-covers.imgix.net/9781250267689.jpg?w=450" alt="Book 1">
-          <h3>A Master Of Djinn</h3>
-<p style="color:green">
-<code>15% OFF</code>
-<h2><p><u>₹220.99</u></p></h2>
+<code>29% OFF</code>
+<h2><p><u>₹227.99</u></p></h2>
 <del>₹320.99</p>
   <center><button class="btncart">Add to cart</button></center>
         </div>
@@ -249,8 +243,10 @@ button:hover{
         <div class="book">
           <img src="https://www.beyondthebookends.com/wp-content/uploads/2020/01/Mr.-Lemoncello.jpg" alt="Book 1">
           <h3>Escape From MR.Lemoncello's Library</h3>
+<span>&#9733;</span>
+<span class="rating-number">4.3</span>
 <p style="color:green">
-<code>16% OFF</code>
+<code>32% OFF</code>
 <h2><p><u>₹149.99</u></p></h2>
 <del>₹220.99</p>
   <center><button class="btncart">Add to cart</button></center>
@@ -258,28 +254,23 @@ button:hover{
         <div class="book">
           <img src="https://i1.wp.com/www.denverpost.com/wp-content/uploads/2021/12/TDP-Z-OTHERFAMILY-01.jpg?fit=620%2C9999px&ssl=1" alt="Book 2">
           <h3>The Other Family</h3>
+<span>&#9733;</span>
+<span class="rating-number">4.1</span>
 <p style="color:green">
-<code>18% OFF</code>
-<h2><p><u>₹233.99</u></p></h2>
+<code>25% OFF</code>
+<h2><p><u>₹240.99</u></p></h2>
 <del>₹320.99</p>
   <center><button class="btncart">Add to cart</button></center>
         </div>
         <div class="book">
           <img src="https://novelonmymind.com/wp-content/uploads/2023/03/Gone-Girl-by-Gillian-Flynn.jpg" alt="Book 3">
-          <h3>Gillian Flynn Gone Girl</h3>
+          <h3>Gone Girl</h3>
+<span>&#9733;</span>
+<span class="rating-number">4.5</span>
 <p style="color:green">
-<code>12% OFF</code>
-<h2><p><u>₹138.99</u></p></h2>
+<code>38% OFF</code>
+<h2><p><u>₹136.99</u></p></h2>
 <del>₹220.99</p>
-  <center><button class="btncart">Add to cart</button></center>
-        </div>
-        <div class="book">
-          <img src="https://mpd-biblio-covers.imgix.net/9781250267689.jpg?w=450" alt="Book 1">
-          <h3>A Master Of Djinn</h3>
-<p style="color:green">
-<code>15% OFF</code>
-<h2><p><u>₹220.99</u></p></h2>
-<del>₹320.99</p>
   <center><button class="btncart">Add to cart</button></center>
         </div>
       </div>
@@ -290,36 +281,33 @@ button:hover{
         <div class="book">
           <img src="https://cdn.vox-cdn.com/thumbor/ttKjmXVgjA0FtaaQQLfR5UMiI4g=/0x0:792x1200/1120x0/filters:focal(0x0:792x1200):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/21960146/61JfGcL2ljL.jpg" alt="Book 1">
           <h3>The Hunger Games</h3>
+<span>&#9733;</span>
+<span class="rating-number">4.4</span>
 <p style="color:green">
-<code>9% OFF</code>
-<h2><p><u>₹249.99</u></p></h2>
+<code>29% OFF</code>
+<h2><p><u>₹248.99</u></p></h2>
 <del>₹350.99</p>
   <center><button class="btncart">Add to cart</button></center>
         </div>
         <div class="book">
           <img src="https://cdn.vox-cdn.com/thumbor/G_ZqKaPY1tRaDyFS3DszLiRJL5k=/0x0:1399x2100/1120x0/filters:focal(0x0:1399x2100):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/21960151/71UH89XIA8L.jpg" alt="Book 2">
           <h3>The Windup Girl</h3>
+<span>&#9733;</span>
+<span class="rating-number">4.5</span>
 <p style="color:green">
-<code>9% OFF</code>
-<h2><p><u>₹334.99</u></p></h2>
+<code>21% OFF</code>
+<h2><p><u>₹331.99</u></p></h2>
 <del>₹420.99</p>
   <center><button class="btncart">Add to cart</button></center>
         </div>
         <div class="book">
           <img src="https://cdn.vox-cdn.com/thumbor/VRdm78HCL4fMvqIkQNUHKml1N9Y=/0x0:1661x2560/1120x0/filters:focal(0x0:1661x2560):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/21960160/91npjUXXkzL.jpg" alt="Book 3">
           <h3>Leviathan Wakes</h3>
+<span>&#9733;</span>
+<span class="rating-number">4.7</span>
 <p style="color:green">
-<code>15% OFF</code>
-<h2><p><u>₹229.99</u></p></h2>
-<del>₹320.99</p>
-  <center><button class="btncart">Add to cart</button></center>
-        </div>
-        <div class="book">
-          <img src="https://mpd-biblio-covers.imgix.net/9781250267689.jpg?w=450" alt="Book 1">
-          <h3>A Master Of Djinn</h3>
-<p style="color:green">
-<code>15% OFF</code>
-<h2><p><u>₹220.99</u></p></h2>
+<code>29% OFF</code>
+<h2><p><u>₹227.99</u></p></h2>
 <del>₹320.99</p>
   <center><button class="btncart">Add to cart</button></center>
         </div>
@@ -331,37 +319,34 @@ button:hover{
         <div class="book">
           <img src="https://newsvoir.com/images/article/image1/10807_p4.jpg" alt="Book 1">
           <h3>When The Devil Whispers</h3>
+<span>&#9733;</span>
+<span class="rating-number">4.3</span>
 <p style="color:green">
-<code>13% OFF</code>
-<h2><p><u>₹449.99</u></p></h2>
+<code>14% OFF</code>
+<h2><p><u>₹447.99</u></p></h2>
 <del>₹520.99</p>
   <center><button class="btncart">Add to cart</button></center>
         </div>
         <div class="book">
           <img src="https://w0.peakpx.com/wallpaper/227/976/HD-wallpaper-the-feast-book-stranger-horror-new-theme-thriller-wierd.jpg?fit=620%2C9999px&ssl=1" alt="Book 2">
           <h3>The Feast</h3>
+<span>&#9733;</span>
+<span class="rating-number">4.3</span>
 <p style="color:green">
-<code>28% OFF</code>
-<h2><p><u>₹712.99</u></p></h2>
+<code>41% OFF</code>
+<h2><p><u>₹719.99</u></p></h2>
 <del>₹1220.99</p>
   <center><button class="btncart">Add to cart</button></center>
         </div>
         <div class="book">
           <img src="https://bookois.com/uploads/1696197999506-LIFES%20LAST%20PAGE%20COVER.jpg" alt="Book 3">
           <h3>Life's Last Page</h3>
+<span>&#9733;</span>
+<span class="rating-number">4.7</span>
 <p style="color:green">
-<code>30% OFF</code>
-<h2><p><u>₹902.99</u></p></h2>
+<code>26% OFF</code>
+<h2><p><u>₹976.99</u></p></h2>
 <del>₹1320.99</p>
-  <center><button class="btncart">Add to cart</button></center>
-        </div>
-        <div class="book">
-          <img src="https://mpd-biblio-covers.imgix.net/9781250267689.jpg?w=450" alt="Book 1">
-          <h3>A Master Of Djinn</h3>
-<p style="color:green">
-<code>15% OFF</code>
-<h2><p><u>₹220.99</u></p></h2>
-<del>₹320.99</p>
   <center><button class="btncart">Add to cart</button></center>
         </div>
       </div>
@@ -372,38 +357,35 @@ button:hover{
         <div class="book">
           <img src="https://cdn.kobo.com/book-images/2b2aa79c-dc4c-4eb1-bc87-be501c31ac68/1200/1200/False/subhas-chandra-bose-5.jpg" alt="Book 1">
           <h3>Subhas Chandra Bose</h3>
+<span>&#9733;</span>
+<span class="rating-number">5.0</span>
 <p style="color:green">
-<code>24% OFF</code>
-<h2><p><u>₹749.99</u></p></h2>
-<del>₹1120.99</p>
+<code>50% OFF</code>
+<h2><p><u>₹1500.99</u></p></h2>
+<del>₹3000.99</p>
   <center><button class="btncart">Add to cart</button></center>
         </div>
         <div class="book">
           <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/713JggHb4YS.AC_UF1000,1000_QL80.jpg?fit=620%2C9999px&ssl=1" alt="Book 2">
           <h3>Che-Guevara</h3>
+<span>&#9733;</span>
+<span class="rating-number">5.0</span>
 <p style="color:green">
-<code>33% OFF</code>
-<h2><p><u>₹1999.99</u></p></h2>
-<del>₹3320.99</p>
+<code>50% OFF</code>
+<h2><p><u>₹2000.99</u></p></h2>
+<del>₹4000.99</p>
   <center><button class="btncart">Add to cart</button></center>
         </div>
         <div class="book">
           <img src="https://1.bp.blogspot.com/-UBMyAOlqEf8/XPFyPa2rEII/AAAAAAAAAJ8/Qm8S41-jHg8NbMMLTOx2YR2hRCbR1RkCwCLcBGAs/s1600/IMG_20190531_235606.jpg" alt="Book 3">
           <h3>Mother Teresa</h3>
+<span>&#9733;</span>
+<span class="rating-number">5.0</span>
 <p style="color:green">
-<code>32% OFF</code>
-<h2><p><u>₹1009.99</u></p></h2>
-<del>₹1449.99</p>
+<code>50% OFF</code>
+<h2><p><u>₹1750.99</u></p></h2>
+<del>₹3500.99</p>
   <center><button class="btncart">Add to cart</button></center>
-       </div>
-       <div class="book">
-        <img src="https://mpd-biblio-covers.imgix.net/9781250267689.jpg?w=450" alt="Book 1">
-        <h3>A Master Of Djinn</h3>
-<p style="color:green">
-<code>15% OFF</code>
-<h2><p><u>₹220.99</u></p></h2>
-<del>₹320.99</p>
-<center><button class="btncart">Add to cart</button></center>
       </div>
       </div>
     </div>

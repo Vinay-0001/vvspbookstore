@@ -1,6 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;
+max-width: 1000px;}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #217bcf;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #89d1e4;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,13 +75,26 @@
             <p>Browse our vast sources of books available throught the world.Our website offers different types of selections of books to choose.</p>
             <a href="./catalog.html" class="btn">shop now</a>
         </div>
-
-        <div class="swiper books-slider">
-            <div class="swiper-wrapper">
-                <a href="#" class="swiper-slide"><img src="https://www.cbspd.co.in/media/catalog/product/cache/1/image/c66ed2c04ee7ca3766803238dbeea301/9/7/9788123919423_1.jpg" alt=""></a>          
-            </div>     
-        </div>
     </div>
+</section>
+<section>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="https://jetpackcomics.com/wp-content/uploads/2017/11/buy-banner.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2023/04/You-Should-Read-This-Manga-Banner.png?fit=2080%2C794&ssl=1" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="https://images.squarespace-cdn.com/content/v1/59adbbdfcf81e0f6ca85b80a/1578607925941-YWD0S4S3QLFQAB0GWMQ4/dc-zoom-dc-ink-banner.jpg?format=1500w" style="width:100%">
+</div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
 </section>
 <section class="icons-container">
     <div class="icons">
@@ -106,8 +154,6 @@
                         <a class="btn">add to cart</a>
                     </div>
                 </div>
-    
-                <!-- Book 3 (Add more books as needed) -->
                 <div class="swiper-slide box">
                     <div class="image">
                         <a href="./product.html"><img src="https://india.oup.com/covers/pdp/9780199452811" alt=""></a>
@@ -196,5 +242,25 @@
     </div>
 </section>
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script>
+    let slideIndex = 0;
+    showSlides(); 
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000);
+    }
+    </script>
 </body>
 </html>
